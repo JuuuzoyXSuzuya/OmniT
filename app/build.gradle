@@ -1,9 +1,12 @@
+
 plugins {
     id 'com.android.application'
 }
+
 android {
     namespace 'com.example.regionpatcher'
     compileSdk 35
+
     defaultConfig {
         applicationId 'com.example.regionpatcher'
         minSdk 26
@@ -11,4 +14,13 @@ android {
         versionCode 1
         versionName '0.1.0'
     }
+}
+
+repositories {
+    google()
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.smali:dexlib2:2.5.2'
 }
